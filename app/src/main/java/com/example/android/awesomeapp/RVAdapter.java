@@ -20,9 +20,8 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder>{
     List<Person> persons;
     Context context;
 
-    RVAdapter(Context context, List<Person> persons){
+    RVAdapter(List<Person> persons){
         this.persons = persons;
-        this.context = context;
     }
 
 
@@ -51,12 +50,11 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder>{
     }
 
 
-    public class PersonViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    protected class PersonViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         CardView cv;
         TextView personName;
         TextView personAge;
         ImageView personPhoto;
-        private Context context;
 
 
         public PersonViewHolder(View itemView){
@@ -72,6 +70,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder>{
 
         @Override
         public void onClick(View v) {
+
             if(getLayoutPosition() == 0){
                 try{
                     context.startActivity(new Intent(context, Dexter.class));

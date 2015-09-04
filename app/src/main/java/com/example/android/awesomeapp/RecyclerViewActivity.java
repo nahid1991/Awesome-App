@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RecyclerViewActivity extends Activity {
+
+
     private List<Person> persons;
     private RecyclerView rv;
     Context context;
@@ -42,7 +44,7 @@ public class RecyclerViewActivity extends Activity {
     }
 
     private void initializeAdapter(){
-        RVAdapter adapter = new RVAdapter(context, persons);
+        RVAdapter adapter = new RVAdapter(persons);
         rv.setAdapter(adapter);
     }
 
