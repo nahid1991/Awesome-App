@@ -3,7 +3,6 @@ package com.example.android.awesomeapp;
 
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -16,7 +15,6 @@ public class RecyclerViewActivity extends Activity {
 
     private List<Person> persons;
     private RecyclerView rv;
-    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

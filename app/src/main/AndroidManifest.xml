@@ -16,6 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".Dexter"
+            android:label="Dexter's Lab">
+        </activity>
+        <activity android:name=".DeeDee"
+            android:label="Dexter's Lab">
+        </activity>
+        <activity android:name=".Dad"
+            android:label="Dexter's Lab">
+        </activity>
+        <activity android:name=".Mom"
+            android:label="Dexter's Lab">
+        </activity>
+        <activity android:name=".Mandark"
+            android:label="Dexter's Lab">
+        </activity>
     </application>
 
 </manifest>
